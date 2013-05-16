@@ -1,0 +1,11 @@
+<% if @user.photo? %>
+  <%= image_tag @user.photo.url %>
+  <br />
+  user.photo.identifier: <%= @user.photo.identifier.inspect %>
+  <br />
+  user.photo_identifier: <%= @user.photo_identifier.inspect %>
+  <br />
+  user.photo.filename: <%= @user.photo.filename.inspect %>
+  <br />
+  user.photo.file.filename: <%= @user.photo.file.filename.inspect %>
+<% end %>

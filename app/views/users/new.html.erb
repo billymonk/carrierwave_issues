@@ -1,0 +1,8 @@
+<% if @user.photo? %>
+  user.photo.identifier: <%= user.photo.identifier %>
+  user.photo_identifier: <%= user.photo_identifier %>
+<% end %>
+<%= form_for @user do |form| %>
+  <%= form.file_field :photo %>
+  <%= form.submit "Upload photo" %>
+<% end %>
